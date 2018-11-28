@@ -1,0 +1,25 @@
+<h1>EmployeeForm</h1>
+<form [formGroup]="e" (ngSubmit)="onSubmit(e.value)" novalidate><br>
+  <label>Name</label>
+  <input type="text" placeholder="name" formControlName="name" required>
+
+  <br><br>
+  <label>Age</label>
+  <input type="number" placeholder="age" formControlName="age" required>
+  
+    <br><br>
+  <label>Designation</label>
+  <select formControlName="designation" required>
+
+    <option>PM</option>
+    <option>HR</option>
+    <option>TL</option>
+  </select>
+  
+  <br><br>
+  <label>JoiningDate</label>
+<input type="date" placeholder="date" formControlName="joiningDate">
+  
+  <br><br>
+  <input type="submit"  value="submit"><br>
+</form>
